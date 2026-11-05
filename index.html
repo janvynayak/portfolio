@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janvi Nayak | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 850px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+            font-weight: 400;
+            border-left: 2px solid #ffffff;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 8px 18px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: fit-content;
+            margin-bottom: 25px;
+        }
+        p.intro-text {
+            font-size: 1.15rem;
+            color: #e0e0e0;
+            text-align: justify;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            width: 100%;
+        }
+        .layered-box {
+            background-color: #111111;
+            border: 1px solid #333333;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .layered-box:hover {
+            border-color: #ffffff;
+            transform: translateY(-4px);
+            background-color: #161616;
+        }
+        .layered-box h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .layered-box p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .project-preview {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border: 1px solid #333;
+            margin-top: 15px;
+            background-color: #222;
+        }
+        .file-links {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            border-top: 1px solid #222222;
+            padding-top: 15px;
+        }
+        .file-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .file-links a:hover {
+            text-decoration: underline;
+        }
+        .horizontal-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+        .tag-item {
+            background-color: #111111;
+            border: 1px solid #333333;
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            color: #ffffff;
+        }
+        .interest-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #111111;
+        }
+        .interest-item strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .interest-item p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+        }
+        .edu-box {
+            background-color: #111111;
+            border-left: 3px solid #ffffff;
+            padding: 20px;
+        }
+        .edu-box h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        .edu-box p {
+            color: #a0a0a0;
+        }
+        .contact-links a {
+            color: #ffffff;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 25px;
+            font-weight: 600;
+        }
+        .contact-links a:hover {
+            color: #a0a0a0;
+        }
+        .arrow {
+            display: inline-block;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- INTRODUCTION -->
+        <header>
+            <h1>Janvi Nayak</h1>
+            <div class="subtitle">
+                B.Tech Computer Science Student | Aspiring Tech Professional | Curious Learner | AI & Machine Learning Enthusiast
+            </div>
+            <p class="intro-text">
+                Hello! I’m Janvi Nayak, a Computer Science student specializing in Artificial Intelligence and Machine Learning. I am passionate about exploring data, understanding patterns, and discovering how technology can solve real-world problems. My interests include Data Analytics, Data Visualization, and Machine Learning. I aspire to build a career in data analytics and continuously develop my technical and analytical skills.
+            </p>
+        </header>
+
+        <!-- ABOUT & EDUCATION -->
+        <section>
+            <div class="section-title">About Me & Education</div>
+            <div class="edu-box">
+                <h4>Bachelor of Technology (B.Tech) in Computer Science</h4>
+                <p>I am currently pursuing my degree and have actively worked on projects and hackathons.</p>
+                <p style="margin-top: 10px;"><strong>Specialization:</strong> Artificial Intelligence and Machine Learning (AI/ML)</p>
+                <p><strong>Institution:</strong> Karnavati University</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <div class="section-title">Projects & Hackathon Experience</div>
+            <div class="grid-layout">
+                
+                <!-- Project 1 (IoT) -> Sirf PDF -->
+                <div class="layered-box">
+                    <div>
+                        <h3>IoT-Based Smart Crop Monitoring System</h3>
+                        <p>A project focused on using Internet of Things (IoT) technology for crop monitoring and exploring how smart technology can support agricultural practices.</p>
+                    </div>
+                    <div class="file-links">
+                        <a href="IOT based crop monitoring system.pdf" target="_blank">📄 View PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (COVID) -> Sirf PDF -->
+                <div class="layered-box">
+                    <div>
+                        <h3>Python-Based COVID-19 Data Analysis Project</h3>
+                        <p>A project developed using Python and a COVID-19 database to explore and work with pandemic-related data.</p>
+                    </div>
+                    <div class="file-links">
+                        <a href="Python based COVID-19 data data analysis.pdf" target="_blank">📄 View PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Hackathon -> Sirf JPG Image -->
+                <div class="layered-box">
+                    <div>
+                        <h3>Smart India Hackathon 2024</h3>
+                        <p>Participated in the Preliminary round on September 10, 2024. Our business model focused on connecting government departments and laboratories through innovative technology.</p>
+                        <!-- Yahan hackathon.jpg image show hogi -->
+                        <img src="hackathon.jpg" alt="Hackathon Image" class="project-preview">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <div class="section-title">Technical Skills</div>
+            <ul class="horizontal-list">
+                <li class="tag-item">Python</li>
+                <li class="tag-item">HTML</li>
+                <li class="tag-item">CSS (Basic Knowledge)</li>
+                <li class="tag-item">Machine Learning</li>
+            </ul>
+        </section>
+
+        <!-- AREAS OF INTEREST -->
+        <section>
+            <div class="section-title">Areas of Interest</div>
+            <div class="interest-item">
+                <strong>Data Analytics</strong>
+                <p>Interested in exploring datasets, identifying patterns, and generating meaningful insights.</p>
+            </div>
+            <div class="interest-item">
+                <strong>Data Visualisation</strong>
+                <p>Interested in presenting complex information through clear, meaningful, and visually appealing representations.</p>
+            </div>
+            <div class="interest-item">
+                <strong>Machine Learning</strong>
+                <p>Interested in understanding intelligent algorithms and exploring how machines learn from data.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT ME -->
+        <section style="margin-bottom: 40px;">
+            <div class="section-title">Contact Me</div>
+            <div class="contact-links">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=janvynayak2022@gmail.com" target="_blank">✉️ Email Me <span class="arrow">→</span></a>
+                <a href="https://github.com/janvynayak" target="_blank">💻 GitHub <span class="arrow">→</span></a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
